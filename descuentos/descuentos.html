@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>descuentos</title>
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
@@ -14,16 +16,19 @@
     </header>
     <main>
         <section>
-            <h2>
+            <h2 class="mian-title">
                 calcula el precio a pagar de tus productos con descuento
             </h2>
 
-            <form action="">
+            <form action="" class="main-form">
 
                 <label for="InputPrice">escribe el precio de tu producto</label>
                 <input type="number" name="" id="InputPrice">
                 <label for="InputDiscount">escribe el descuento de tu producto</label>
                 <input type="number" name=""  id="InputDiscount">
+                <label for="">Introduce algun cupon de descuento si lo tienes</label>
+                <input type="text" name="" id="InputCoupons">
+
 
                 <button type="button" onclick="OnClickButtonPriceDiscount()">
                     calcular el precio con descuento 

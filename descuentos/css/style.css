@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: cornflowerblue;
+}
+
+header h1{
+    font-size: 2.5rem;
+}
+
+main{
+    margin-top: 100px;
+    width: 100%;
+    display:  flex;
+    font-size: 1.6rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main .mian-title{
+    font-size: 2.0rem;
+    justify-items: center;
+}
+
+main section{
+    margin: 0 auto;
+    height: 400px;
+    width: 25%;
+    border: solid 3px blue;
+    border-radius: 30px;
+}
+main .main-form{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+
+}
+
+main .main-form button{
+    margin-top: 25px;
+}
