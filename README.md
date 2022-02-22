@@ -17,3 +17,10 @@ figuras geometricas
 -segundo paso: implementat las formulas en Js
 -tercer paso: crear funciones 
 -cuarto paso: integrar JS con HTML
+
+## taller 3: promedio, mediana y mod
+
+-primer paso: definir las formulas
+-segundo paso: implementat las formulas en Js
+-tercer paso: crear funciones 
+-cuarto paso: integrar JS con HTML
