@@ -9,7 +9,7 @@ function calcularPromedio(lista){
 }
 
 
-const lista = [
+const listaMediana = [
     100,
     200,
     300,
