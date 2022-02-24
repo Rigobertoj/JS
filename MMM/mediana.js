@@ -13,7 +13,9 @@ const listaMediana = [
     100,
     200,
     300,
-    4000000000,
+    400,
+    500,
+    600,
 ]
 
 // const midlista = parseInt(lista.length/2);
