@@ -1,3 +1,4 @@
+//helpers functions 
 function calcularPromedio(lista){
     const sumaLista = lista.reduce(
         function (ValorAcumulcado = 0, nuevoElemento){
@@ -7,8 +8,25 @@ function calcularPromedio(lista){
     const PromedioLista = sumaLista/lista.length;
     return PromedioLista;
 }
+function esPar(Elemento){
+    return (Elemento % 2 === 0);
+}
 
+//median function
+function CalcularMdiana(list){
+    const midlista = parseInt(list.length/2);
+    if(esPar(list.length)){
+        const num1 = list[midlista];
+        const num2 = list[midlista - 1];
 
+        const mediana = calcularPromedio([num1, num2]);
+        return mediana;
+    }else{
+        return list[midlista];
+    }
+} 
+
+//overall median
 const salariosCol = colombia.map(
     function(persona){
         return persona.salary;
@@ -20,22 +38,17 @@ const salarioColSort = salariosCol.sort(function(a,b){
 }
 );
 
-function CalcularMdiana(list){
-    const midlista = parseInt(list.length/2)
+const medianaGeneralColo = CalcularMdiana(salarioColSort);
 
-    function esPar(Elemento){
-        return (Elemento % 2 === 0);
-    }
+//median function Top 10%
 
-    if(esPar(list.length)){
-        const num1 = list[midlista]
-        const num2 = list[midlista - 1]
+const spliceStar = (salarioColSort.length * 90)/100;
+const spliceCount = salarioColSort.length - spliceStar;
 
-        const mediana = calcularPromedio([num1, num2])
-        return mediana 
-    }else{
-        return list[midlista]
-    }
-} 
+const salariosColTop10 = salarioColSort.splice(spliceStar, spliceCount)
 
-console.log(CalcularMdiana(salarioColSort))
+const medianaTop10 = CalcularMdiana(salariosColTop10);
+
+
+
+console.log({medianaGeneralColo,medianaTop10})
