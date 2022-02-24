@@ -1,3 +1,38 @@
 *{
     box-sizing: border-box;
 }
+html {
+    font-size: 62.5%;
+}
+body{
+    background-color: white;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+
+}
+header .header-section{   
+    margin: 0 auto;
+    font-size: 2rem;
+}
+header .header-section-nav{
+    font-size: 1.6rem;
+    display: flex;
+}
+
+header .header-section-nav{
+    justify-content: flex-end;
+}
+header .header-nav-li{
+    margin-right: 10px;
+    display: inline-block;
+    padding: 0;
+    list-style-type: none;
+}
+header .header-nav-li a{
+    color:#000;
+    text-decoration: none;
+}
+
