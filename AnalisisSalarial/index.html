@@ -18,19 +18,30 @@
                 <ul class="header-nav-ul">
                     <li class="header-nav-li"><a href="">calculo financiero</a></li>
                     <li class="header-nav-li"><a href="">analisis salarial</a></li>
+                    <li class="header-nav-li"><a href="">Medias aritmeticas</a></li>
                 </ul>
             </nav>
         </section>
     </header>
     <main>
+        <script src="./funciones.js"></script>
         <section class="main-section">
             <div class="main-section-container1">
-                <input type="number" id="main-section-input">
-                <button>interes simple</button>
-                <button>interes compuesto</button>
+                <div class="main-container1-input">
+                    <label for="main-section-input-capital">ingresa el capital</label>
+                    <input type="number" id="main-section-input-capital">
+                    <label for="main-section-input-Interes">ingresa la tasa de interes anual</label>
+                    <input type="number" id="main-section-input-Interes">
+                    <label for="main-section-input-Plazo">ingresa el plazo de la deuda en meses</label>
+                    <input type="number" id="main-section-input-Plazo">
+                </div>
+                <div class="main-container1-button">
+                    <button onclick="CalcularInteresSimple()">interes simple</button>
+                    <button onclick="calcularInteresCompuesto()">interes compuesto</button>
+                </div>
             </div>
             <div class="main-section-container2">
-                <p>Total</p>
+                <p Id="main-container2-result">Total</p>
             </div>
         </section>
     </main>

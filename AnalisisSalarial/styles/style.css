@@ -5,7 +5,7 @@ html {
     font-size: 62.5%;
 }
 body{
-    background-color: white;
+    background-color:rgb(201, 236, 225);
 }
 
 header{
@@ -36,3 +36,63 @@ header .header-nav-li a{
     text-decoration: none;
 }
 
+main{
+    display: flex;
+    width: 100%;
+}
+
+main .main-section{
+    background-color: aliceblue;
+    font-size: 1.6rem;
+    display: flex;
+    width: 40%;
+    height: 400px;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin:  0 auto;
+}
+
+main .main-section-container1{
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    margin: 15px;
+}
+main .main-container1-input{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+main .main-section-container1 input{
+    width: 70%;
+    height: 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(188, 247, 227);
+}
+
+main .main-section-container1 button{
+    width: 100px;
+    margin-top: 33%;
+}
+
+main .main-section-container1 .main-container1-button{
+    justify-content: center;
+    display: flex;
+
+}
+main .main-section-container1 .main-container1-button button{
+    margin-right: 15px;
+    background-color: rgb(98, 228, 174);
+    border: none;
+    box-shadow: 1px 1px 5px black;
+}
+
+main .main-section-container2{
+    border-radius: 20px;
+    background-color: aquamarine;
+    margin: 30px;
+    width: 50%;
+}
